@@ -1,0 +1,8 @@
+@use "../../sass/abstracts/abstracts" as abs;
+
+.container {
+    max-width: 1365px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:abs.$tip1 ;
+}

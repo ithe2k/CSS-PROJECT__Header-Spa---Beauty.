@@ -1,0 +1,122 @@
+@use "../../sass/abstracts/abstracts" as abs;
+
+.hero-area {
+  display: flex;
+  position: relative;
+  padding-left: 0;
+
+  .woman {
+    position: absolute;
+    width: 42%;
+    z-index: 1;
+    left: 520px;
+  }
+
+  .hero-text {
+    width: 65%;
+    background-color: abs.$hero-clr-l;
+
+    .elements {
+      width: 60%;
+      margin-left: 100px;
+
+      h1 {
+        color: abs.$blue;
+        line-height: 50px;
+        font-size: 40px;
+      }
+      p.sub {
+        color: abs.$soft-grey;
+        margin-bottom: 20px;
+      }
+      .booking {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        .booknow {
+          color: white;
+          padding: 5px 15px;
+          background-color: abs.$blue;
+          border-radius: 10px;
+          text-decoration: none;
+
+          &:hover {
+            color: abs.$blue;
+            background-color: abs.$hero-clr-r;
+          }
+        }
+      }
+
+      .w-video {
+        display: flex;
+
+        a {
+          display: inline-flex;
+          align-items: center;
+          text-decoration: none;
+          color: abs.$blue;
+          gap: 10px;
+
+          &:hover {
+            
+            color: abs.$hero-clr-r;
+            font-size: 17px;
+            
+            
+          
+          }
+        }
+      }
+      .numbers {
+        display: flex;
+        justify-content:center;
+        padding-top: 10px;
+        background-color: white;
+        width: 400px;
+    
+
+        article {
+          text-align: center;
+          margin: 0;
+          padding: 0;
+         
+
+          img {
+            width: 50px;
+          }
+
+          h3 {
+            color: abs.$blue;
+            font-weight: 500;
+          }
+
+          p {
+            margin: 0;
+            color: abs.$soft-grey;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-color {
+  display: inline-block;
+  align-content: center;
+  justify-content: left;
+  width: 40%;
+  background-color: abs.$hero-clr-r;
+  img {
+    position: relative;
+    right: 50px;
+    width: 80%;
+    height: 70%;
+    opacity: 0.5;
+    color: #a2cfc6;
+    z-index: 1;
+  }
+}

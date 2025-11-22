@@ -1,0 +1,15 @@
+FLUJO DE SASS.
+
+-variables: 
+    En el archivo partial(/abstract/variables.scss) declaramos la variable.($...)
+    la exportamos hacia el archivo root-file(style.scss)  atraves del partial abstract con @forward.
+    En el root-file (style.scss) importamos los partials con @use y les ponemos un namespace que nos servira para referenciarlos cuando usemos las variables.(as abs)
+    Luego en el partial del layout donde necesitemos usar la variable importaremos nuevamente el partial donde se encuentra la variable con @use igual que el root file y haremos use de la misma referencialdo simebre con namespace.(abs.$primary-color)
+
+
+NODE JS- VITE - SASS:
+
+   - Node:
+    es el entorno de ejcucion que provee a vite las condiciones idoneas para hacer su trabajo de construir un servidor local y compilar en tiempo real de scss (sass) a css mientras desarrollamos
+    (scss --> css) dentro de un servidor vite en un entorno de ejecucion NODE JS
+    main.js es el archivo main-module que inicia la aplicacion y carga  del root file css/sass

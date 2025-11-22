@@ -1,0 +1,78 @@
+@use "../../sass/abstracts/abstracts" as abs;
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin: 0;
+  position: relative;
+
+  .main-nav ul {
+    @include abs.nav-list;transition-delay: 0.5s;
+
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 50px;
+
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: abs.$blue;
+      &:hover {
+        color: white;
+        background-color: abs.$blue;
+        transition: 0.3s;
+      }
+    }
+  }
+  .login-bar {
+    align-items: center;
+    gap: 66px;
+    @include abs.nav-list;
+    .search,
+    .login {
+      @include abs.nav-list;
+      gap: 20px;
+      a {
+        position: relative;
+        color: abs.$blue;
+        text-decoration: none;
+      }
+      .singin {
+        &::before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 100%;
+          bottom: 0;
+          background-color: abs.$blue;
+        }
+
+        &:hover {
+          &::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            top: 0px;
+            background-color: abs.$hero-clr-r;
+          }
+        }
+      }
+      .singup {
+        color: white;
+        padding: 10px 20px;
+        background-color: abs.$blue;
+        border-radius: 50px;
+
+        &:hover {
+          color: abs.$blue;
+          background-color: abs.$hero-clr-r;
+        }
+      }
+    }
+  }
+}
